@@ -1,0 +1,57 @@
+{
+  "@modern-mean/generator-modern-mean": {
+    "module": {
+      "createrepository": true,
+      "name": "@modern-mean/server-api-module",
+      "version": "0.0.0",
+      "description": "Modern-Mean Module for API Endpoints",
+      "keywords": [
+        "modern-mean",
+        "api",
+        "endpoint",
+        "express",
+        "versioning"
+      ],
+      "author": "Andrew Throener",
+      "email": "athroener@mystartupsolutions.com",
+      "travis": true,
+      "class": "ApiModule"
+    }
+  },
+  "generator-github-create": {
+    "authenticate": {
+      "username": "trainerbill",
+      "twofactor": false
+    },
+    "create": {
+      "useOrg": true,
+      "org": "modern-mean",
+      "name": "server-api-module",
+      "description": "Modern-Mean Module for API Endpoints",
+      "private": false,
+      "init": true,
+      "push": true,
+      "urls": [
+        "https://github.com/modern-mean/server-api-module",
+        "git@github.com:modern-mean/server-api-module.git",
+        "https://github.com/modern-mean/server-api-module.git"
+      ]
+    },
+    "readme": {
+      "title": "server-api-module",
+      "description": "Modern-Mean Module for API Endpoints",
+      "usebadges": true,
+      "badges": [
+        "travis",
+        "coveralls",
+        "david",
+        "davidDev",
+        "gitter",
+        "npm"
+      ],
+      "profile": "modern-mean",
+      "repository": "server-api-module",
+      "scoped": true
+    }
+  }
+}
