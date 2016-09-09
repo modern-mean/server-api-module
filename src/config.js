@@ -1,3 +1,3 @@
 export default {
-  test: process.env.APIMODULE_TEST || 'test'
+  welcome: process.env.APIMODULE_WELCOME || 'Welcome to the Modern-Mean API Module'
 };
