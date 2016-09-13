@@ -6,7 +6,7 @@ export class ApiModule extends ExpressModule {
 
   constructor(...args) {
     //Push default configuration to front of array.  Passed in configuration from ...args should take precedence.
-    args.unshift({ config: config, logger: logger });
+    args.unshift({ config: config, logger: logger() });
     super(...args);
 
     this.config = this.getConfigModule().get();
