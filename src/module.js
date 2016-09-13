@@ -12,12 +12,14 @@ export class ApiModule extends ExpressModule {
     this.config = this.getConfigModule().get();
     this.logger = this.getLoggerModule().get();
 
+    this.logger.debug('ApiModule::Constructor::Config', JSON.stringify(this.config));
+
     let apiRouter = this.express.Router();
 
     apiRouter
       .route('/api/v1')
       .all((req, res, next) => {
-        res.json(config.welcome);
+        res.status(200).json(this.config.welcome);
         return next();
       });
 
