@@ -1,6 +1,6 @@
 {
   "name": "@modern-mean/server-api-module",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Modern-Mean Module for API Endpoints",
   "keywords": "modern-mean,api,endpoint,express,versioning",
   "main": "dist/index.js",
