@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Modern-Mean Module for API Endpoints",
   "keywords": "modern-mean,api,endpoint,express,versioning",
-  "main": "/dist/index.js",
+  "main": "dist/index.js",
   "engines": {
     "node": ">=6.4",
     "npm": ">=3.10.3"
