@@ -24,7 +24,10 @@
   "author": "Andrew Throener",
   "dependencies": {
     "@modern-mean/server-base-module": "^0.1.7",
-    "@modern-mean/server-express-module": "^0.1.5"
+    "@modern-mean/server-express-module": "^0.1.5",
+    "cors": "^2.8.1",
+    "express-list-routes": "^0.1.4",
+    "lodash.defaults": "^4.2.0"
   },
   "nyc": {
     "sourceMap": false,
@@ -56,10 +59,12 @@
     "coveralls": "^2.11.12",
     "cross-env": "^2.0.1",
     "eslint": "^3.5.0",
+    "express-list-routes": "^0.1.4",
     "mocha": "^3.0.2",
     "nyc": "^8.1.0",
     "sinon": "^1.17.5",
     "sinon-as-promised": "^4.0.2",
-    "sinon-chai": "^2.8.0"
+    "sinon-chai": "^2.8.0",
+    "supertest": "^2.0.0"
   }
 }

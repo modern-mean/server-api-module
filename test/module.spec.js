@@ -4,11 +4,13 @@ import { ApiModule } from '../src/module';
 let sandbox,
   moduleTest;
 
+process.env.EXPRESSMODULE_HTTPS = 'false';
+
 describe('/src/module', () => {
 
   beforeEach(() => {
-    sandbox = sinon.sandbox.create();
-    return moduleTest = new ApiModule();
+
+    return sandbox = sinon.sandbox.create();
   });
 
   afterEach(() => {
@@ -32,6 +34,21 @@ describe('/src/module', () => {
 
     it('should return itself', () => {
       return expect(moduleTest.get() instanceof ApiModule).equal(true);
+    });
+
+  });
+
+  describe.only('supertest', () => {
+
+    it('should respond to OPTIOSN', (done) => {
+      moduleTest = new ApiModule();
+      //console.log(moduleTest.expressApp._router.stack);
+      request(moduleTest.expressApp)
+        .options('/api/v1')
+        .end((err, res) => {
+          console.log(err, res.body);
+          return done();
+        });
     });
 
   });

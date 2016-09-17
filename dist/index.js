@@ -3,15 +3,10 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.ApiModule = undefined;
 
 var _module = require('./module');
 
-Object.keys(_module).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _module[key];
-    }
-  });
-});
+var _module2 = require('../src/module');
+
+let ApiModule = exports.ApiModule = process.env.NODE_ENV !== 'production' ? _module2.ApiModule : _module.ApiModule;
